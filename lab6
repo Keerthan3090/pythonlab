@@ -1,0 +1,60 @@
+def nested( l ):
+   
+    total = 0
+     
+    for j in range(len(l)):
+       
+        if type(l[j]) == list :
+           
+            total+= sum_nestedlist(l[j])
+        else:
+           
+            total += l[j]  
+             
+    return total
+             
+print(nested([[1,2,3],[4,[5,0]],6]))
+
+
+
+def Csum(lists):
+    cu_list = []
+    length = len(lists)
+    cu_list = [sum(lists[0:x:1]) for x in range(0, length+1)]
+    return cu_list[1:]
+ 
+lists = [1,2,3]
+print (Csum(lists))
+
+
+test_list = [1, 2,3,4]
+ 
+print("The original list is : " + str(test_list))
+ 
+res = [test_list[1], test_list[2]]
+ 
+
+print("The middle elements are: " + str(res))
+
+
+write a function called is-sorted that takes a list as a parameter and returns true if list is sorted in ascending order and false otherwise
+
+ef is_sorted(listik):
+    if sorted(listik) == listik:
+        return True
+    else:
+        return False
+    
+print(is_sorted([1,2,2])) 
+print(is_sorted(['b','a']))
+
+
+write a function called has-duplicates that takes and returns true if there is any element that appears more than once shoudnt modify original list
+
+def has_duplicates(t):
+    sort = t[:]
+    sort.sort()
+    for i in range(len(sort)-1):
+        if sort[i] == sort[i+1]:
+            return True
+            
