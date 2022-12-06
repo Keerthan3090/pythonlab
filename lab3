@@ -1,0 +1,39 @@
+r=float(input("Input Radius : "))
+area=3.14*r*r
+perimeter=2*3.14*r
+print("Area of Circle: ",area)
+print("Perimeter of Circle: ",perimeter)
+ 
+ 
+ 
+ 
+ import random
+play = ["rock","paper","scissors"]
+computer = play[random.randint(0,2)]
+player = False
+
+while player == False:
+    player=input("Rock,paper,scissors?")
+    if player==computer:
+        print("Tie")
+    elif player=="rock":
+        if computer=="paper":
+            print("you lose,computer wins")
+        else:
+            print("you win,computer loses")
+    elif player=="paper":
+        if computer=="scissors":
+            print("you lose,computer wins")
+        else:
+            print("you win,computer loses")
+    elif player=="scissors":
+        if computer=="rock":
+            print("you lose,computer wins")
+        else:
+            print("you win,computer loses")
+    else:
+        print("That is invalid")
+     
+    player=False
+    
+    computer = play[random.randint(0,2)]
