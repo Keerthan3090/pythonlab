@@ -1,0 +1,114 @@
+X = [[1,2,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+ 
+Y = [[9,8,7],
+    [6,5,4],
+    [3,2,1]]
+ 
+ 
+result = [[0,0,0],
+        [0,0,0],
+        [0,0,0]]
+ 
+
+for i in range(len(X)):  
+
+    for j in range(len(X[0])):
+        result[i][j] = X[i][j] + Y[i][j]
+ 
+for r in result:
+    print(r)
+    
+    
+    
+    
+    
+    num = [10, 30, 40, 20, 50]
+num.sort()
+print (num)
+fnum = [10.23, 10.12, 20.45, 11.00, 0.1]
+print (fnum)
+str = ["Banana", "Cat", "Apple", "Dog", "Fish"]
+str.sort()
+print (str)
+
+
+
+
+num = [10, 30, 40, 20, 50]
+num.sort(reverse=True)
+print (num)
+fnum = [10.23, 10.12, 20.45, 11.00, 0.1]
+fnum.sort(reverse=True)
+print (fnum)
+str = ["Banana", "Cat", "Apple", "Dog", "Fish"]
+str.sort(reverse=True)
+print (str)
+
+
+
+mylist = [21, 5, 8, 52, 21, 87]
+r_item = 21
+for item in mylist:
+    if(item==r_item):
+        mylist.remove(r_item)
+
+print(mylist)
+
+
+
+n=int(input("Enter a number: "))
+for i in range(0,n):
+    for j in range(0,n):
+        if(i==j):
+            print("1",sep=" ",end=" ")
+        else:
+            print("0",sep=" ",end=" ")
+    print()
+    
+    
+    
+    list=[]
+for i in range(0,4):
+    a=input()
+    list.append(a)
+list.sort()
+print(list)
+list.sort(reverse=True)
+print(list)
+    
+    
+    
+    
+    import collections
+L = [1, 2, 8, 5, 8, 7, 8]
+largest = max(L)
+res = collections.Counter(L)
+print(res[largest])
+
+
+
+tuples = 2, 4, 5, 6, 2, 3, 4, 4, 7 
+print(tuples)
+count = tuples.count(4)
+print(count)
+
+
+size = int(input("Enter the size of the matrix : "))
+for i in range(0,size):
+    for j in range(0,size):
+        if(i==j):
+            print("1",end = " ")
+        else:
+            print("0",end = " ")
+        print()
+        
+        order = int(input("Enter order of matrix: "))
+for i in range(0, order):  
+    for j in range(0, order):
+        if i == j :
+            print("1", end = " ")
+        else:
+            print("0", end = " ")
+    print()
